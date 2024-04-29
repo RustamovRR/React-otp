@@ -1,0 +1,59 @@
+button {
+  width: 60%;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  background-color: #18d395;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: #008659;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.5;
+    background-color: #18d395;
+  }
+}
+
+section {
+  margin-top: 1rem;
+}
+
+section h2 {
+  color: #18d395;
+}
+
+section {
+  color: red;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
